@@ -7,7 +7,7 @@ const AddTreatments = () => {
   const submitHandler = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:4000/treatment", { tname, tdesc })
+      .post("https://mern4pmbackend.onrender.com/treatment", { tname, tdesc })
       .then((res) => {
         alert("Treatment added succe");
         setTname("");
