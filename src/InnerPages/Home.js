@@ -8,7 +8,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:4000/treatment`)
+      .get(`https://mern4pmbackend.onrender.com/treatment`)
       .then((res) => {
         setTreatment(res.data);
       })
