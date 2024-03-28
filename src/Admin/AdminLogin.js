@@ -13,7 +13,7 @@ const AdminLogin = () => {
     console.log(email);
     console.log(password);
     axios
-      .post(`http://localhost:4000/login`, { email, password })
+      .post(`https://mern4pmbackend.onrender.com/login`, { email, password })
       .then((res) => {
         if (res.data == "Valid") {
           navigate("/admindashboard");
